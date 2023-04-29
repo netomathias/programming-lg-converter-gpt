@@ -1,9 +1,13 @@
-### Programming language converter using chat gpt
+# Programming language converter using chat gpt
 
-## To run this project
+### To run this project
+```
+cd gpt-translate-programming-language
+```
+## Then
 ```
 npm install
 ```
-## Then
+### Then
 ```
 node run server.mjs

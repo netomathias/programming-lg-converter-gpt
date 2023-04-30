@@ -7,8 +7,6 @@ app.listen(3000, () => console.log("server is up"));
 app.use(json());
 
 app.post("/", async (req, res) => {
-  console.log(req.body.code);
   const result = await responseGpt(req.body.programmingLanguage, req.body.code);
-
-  res.send(result.data.choices[0].text);
+  res.send(result.data.choices[0].message.content);
 });
